@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .container input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .container button {
+        width: 106%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .container button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz Generator</h1>
+      <input type="text" id="topicInput" placeholder="Enter the topic" />
+      <button onclick="generateQuiz()">Generate Quiz</button>
+    </div>
+    <script>
+      function generateQuiz() {
+        var topic = document.getElementById("topicInput").value;
+        if (topic == "java" || topic == "Java" || topic == "JAVA") {
+          window.location.href = "quiz.html?topic=" + encodeURIComponent(topic);
+        } else if (
+          topic == "c" ||
+          topic == "C" ||
+          topic == "C language" ||
+          topic == "C LANGUAGE" ||
+          topic == "C Language"
+        ) {
+          window.location.href =
+            "quiz_c_language.html?topic=" + encodeURIComponent(topic);
+        }else if (topic == "Python" || topic == "python" || topic == "PYTHON" || topic == "Python Language" || topic == "python language"){
+          window.location.href = "quiz_python.html?topic=" + encodeURIComponent(topic);
+        }
+         else {
+          alert("Page Not Found");
+        }
+      }
+      function submitQuiz() {
+        alert("Quiz submitted!");
+      }
+    </script>
+  </body>
+</html>

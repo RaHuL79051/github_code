@@ -1,0 +1,51 @@
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    background: rgb(95,101,255);
+background: linear-gradient(223deg, rgba(95,101,255,0.8352591036414566) 11%, rgba(253,29,29,0.8240546218487395) 52%, rgba(252,176,69,0.8576680672268908) 82%);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(95,101,255);
+background: linear-gradient(250deg, rgba(95,101,255,0.8352591036414566) 11%, rgba(253,29,29,0.8240546218487395) 52%, rgba(252,176,69,0.8576680672268908) 82%);
+    border-radius: 50px;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .options label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .options input {
+    margin-right: 5px;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #2356d7d0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .submit-btn:hover{
+    opacity: 0.8;
+  }
+  .submit-btn::after{
+    color:red;
+  }
